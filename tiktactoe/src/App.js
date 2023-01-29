@@ -53,11 +53,11 @@ function App() {
       }
     }
   };
-  const resetBoard = (board) => {
+  const clearBoard = () => {
     setGameOver(false);
     setBoard(Array(9).fill(null));
   };
-  const resetGame = (board) => {
+  const resetGame = () => {
     setGameOver(false);
     setScores(0);
     setBoard(Array(9).fill(null));
@@ -66,8 +66,8 @@ function App() {
   return (
     <div className="App">
       <ScoreBoard scores={scores} xPlaying={xPlaying} />
-      <Board board={board} onClick={gameOver ? resetBoard : handleBoxClick} />
-      <ResetBoard resetBoard={resetBoard} resetGame={resetGame} />
+      <Board board={board} onClick={gameOver ? clearBoard : handleBoxClick} />
+      <ResetBoard clearBoard={clearBoard} resetGame={resetGame} />
     </div>
   );
 }
