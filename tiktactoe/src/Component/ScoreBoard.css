@@ -5,7 +5,7 @@
     align-items: center;
     width: 20rem;
     font-size:1.5em;
-    background-color: white;
+    background-color: #888;
     margin: 3rem auto;
     box-shadow: 0px 0px 8px #888;
     border-radius: 0.5rem;
@@ -17,15 +17,15 @@
     padding:1rem 0;
 }
 .x-score {
-    color: rgb(255,70,37);
-    border-bottom: 5px solid rgb(255,70,37);
+    color:black;
+    border-bottom: 5px solid black;
     border-radius: 0 0.5rem 0.5rem 0;
 }
 .o-score {
-    color: rgb(44,135,255);
-    border-bottom: 5px solid rgb(44,135,255);
+    color: white;
+    border-bottom: 5px solid white;
     border-radius: 0 0.5rem 0.5rem 0;
 }
 .inactive{
     border-bottom: 5px solid transparent;
-}
+}   
