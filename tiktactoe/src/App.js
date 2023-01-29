@@ -1,6 +1,7 @@
 import Board from "./Component/Board";
 import React, { useState } from "react";
 import ScoreBoard from "./Component/ScoreBoard";
+import ResetBoard from "./Component/ResetBoard";
 
 function App() {
   const [board, setBoard] = useState(Array(9).fill(null));
@@ -56,11 +57,17 @@ function App() {
     setGameOver(false);
     setBoard(Array(9).fill(null));
   };
+  const resetGame = (board) => {
+    setGameOver(false);
+    setScores(0);
+    setBoard(Array(9).fill(null));
+  };
 
   return (
     <div className="App">
       <ScoreBoard scores={scores} xPlaying={xPlaying} />
       <Board board={board} onClick={gameOver ? resetBoard : handleBoxClick} />
+      <ResetBoard resetBoard={resetBoard} resetGame={resetGame} />
     </div>
   );
 }

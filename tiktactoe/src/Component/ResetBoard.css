@@ -1,0 +1,22 @@
+/* .reset-btn{
+    border:none;border-radius:0.5rem;
+    background-color: rgb(0,110,255);
+    color: white;
+    font-size:2rem;
+    padding: 0.5rem 1rem;
+    margin:2rem auto;
+    display: block;
+} */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+.reset-btn{
+    margin-right: 1rem;
+    padding:1rem;
+}
+.reset-score{
+    padding:1rem;
+}
