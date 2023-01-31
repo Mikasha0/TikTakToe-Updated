@@ -33,10 +33,12 @@ function App() {
       if (winner === "O") {
         let { oScore } = scores;
         oScore += 1;
+        alert("Game Over: The winner of this round is player " + winner);
         setScores({ ...scores, oScore });
       } else {
         let { xScore } = scores;
         xScore += 1;
+        alert("Game Over: The winner of this round is player " + winner);
         setScores({ ...scores, xScore });
       }
     }
@@ -59,7 +61,7 @@ function App() {
   };
   const resetGame = () => {
     setGameOver(false);
-    setScores(0);
+    setScores({ xScore: 0, oScore: 0 });
     setBoard(Array(9).fill(null));
   };
 
